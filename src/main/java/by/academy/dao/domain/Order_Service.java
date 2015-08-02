@@ -9,14 +9,14 @@ public class Order_Service  {
         return id_Bill;
     }
 
-    protected void setId_Bill(int id) { 
+    public void setId_Bill(int id) { 
     	this.id_Bill = id;  
     }
     public Integer getId_Service() {
         return id_Service;
     }
 
-    protected void setId_Service(int id) { 
+    public void setId_Service(int id) { 
     	this.id_Service = id;  
     }
 }

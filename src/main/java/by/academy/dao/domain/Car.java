@@ -11,7 +11,7 @@ public class Car  {
         return id_Car;
     }
 
-    protected void setId_Car(int id) { 
+    public void setId_Car(int id) { 
     	this.id_Car = id;  
     }
     
@@ -19,7 +19,7 @@ public class Car  {
         return id_User;
     }
 
-    protected void setId_User(int id) { 
+    public void setId_User(int id) { 
     	this.id_User = id;  
     }
     

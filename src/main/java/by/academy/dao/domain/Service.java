@@ -14,7 +14,7 @@ public class Service  {
         return id_Service;
     }
 
-    protected void setId_Service(int id) { 
+    public void setId_Service(int id) { 
     	this.id_Service = id;  
     }
     
@@ -22,7 +22,7 @@ public class Service  {
         return title;
     }
 
-    protected void setTitle(String title) { 
+    public void setTitle(String title) { 
     	this.title = title;  
     }
     
@@ -30,7 +30,7 @@ public class Service  {
         return cost;
     }
 
-    protected void setCost(int cost) { 
+    public void setCost(int cost) { 
     	this.cost = cost;  
     }
     
@@ -38,7 +38,7 @@ public class Service  {
         return date;
     }
 
-    protected void setDate(Date date) { 
+    public void setDate(Date date) { 
     	this.date = date;  
     }
     
@@ -46,7 +46,7 @@ public class Service  {
         return amount;
     }
 
-    protected void setAmount(int amount) { 
+    public void setAmount(int amount) { 
     	this.amount = amount;  
     }
 

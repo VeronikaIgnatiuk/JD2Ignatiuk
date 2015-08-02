@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS `autoservice` CHARACTER SET UTF8;
 
-CREATE TABLE `autoservice`.`users`
+CREATE TABLE `autoservice`.`user`
 (`id` INT NULL AUTO_INCREMENT,
   `login` VARCHAR(255) NOT NULL,
   `password` VARCHAR(35) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE `autoservice`.`role`
     ON UPDATE CASCADE,
     CONSTRAINT `userrole_user`
     FOREIGN KEY (`id_user`)
-    REFERENCES `autoservice`.`users` (`id`)
+    REFERENCES `autoservice`.`user` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
   
@@ -37,7 +37,7 @@ CREATE TABLE `autoservice`.`role`
   PRIMARY KEY (`id_car`),
   CONSTRAINT `user_car`
     FOREIGN KEY (`id_user`)
-    REFERENCES `autoservice`.`users` (`id`)
+    REFERENCES `autoservice`.`user` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
   
@@ -53,7 +53,7 @@ CREATE TABLE `autoservice`.`role`
     ON UPDATE CASCADE,
 	CONSTRAINT `order_user`
     FOREIGN KEY (`id_user`)
-    REFERENCES `autoservice`.`users` (`id_user`)
+    REFERENCES `autoservice`.`user` (`id_user`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
     
@@ -65,7 +65,7 @@ CREATE TABLE `autoservice`.`service`
   `amount` INT,
   PRIMARY KEY (`id_service`));
   
-CREATE TABLE `autoservice`.`Relation`
+CREATE TABLE `autoservice`.`relation`
 (`id_bill` INT ,
 `id_service` INT ,
     CONSTRAINT `order_relation`
