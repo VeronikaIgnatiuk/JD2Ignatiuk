@@ -7,9 +7,6 @@ CREATE TABLE `autoservice`.`user`
   PRIMARY KEY (`id`),
   UNIQUE INDEX `email_UNIQUE` (`login` ASC));
 
-
-#insert into users (email, password, firstName, surname, phone) values ("a@gmail.com", "111", "333");
-
 CREATE TABLE `autoservice`.`role`
 (`id` INT NULL AUTO_INCREMENT,
   `role` VARCHAR(255) NOT NULL,
