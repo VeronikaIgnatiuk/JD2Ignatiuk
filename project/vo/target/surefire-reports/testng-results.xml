@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="by.academy.TestServer" duration-ms="14369" started-at="2015-08-03T15:34:07Z" finished-at="2015-08-03T15:34:22Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="14369" started-at="2015-08-03T15:34:07Z" finished-at="2015-08-03T15:34:22Z">
+      <class name="by.academy.TestServer">
+        <test-method status="PASS" signature="setup()[pri:0, instance:by.academy.TestServer@402120]" name="setup" is-config="true" duration-ms="13308" started-at="2015-08-03T12:34:08Z" finished-at="2015-08-03T12:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testNothing()[pri:0, instance:by.academy.TestServer@402120]" name="testNothing" duration-ms="895" started-at="2015-08-03T12:34:21Z" finished-at="2015-08-03T12:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNothing -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:by.academy.TestServer@402120]" name="teardown" is-config="true" duration-ms="81" started-at="2015-08-03T12:34:22Z" finished-at="2015-08-03T12:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- by.academy.TestServer -->
+    </test> <!-- Command line test -->
+  </suite> <!-- by.academy.TestServer -->
+</testng-results>
